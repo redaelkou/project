@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    
+<style>
+    @media only screen and (max-width: 500px ){
+        :root{
+    background-color: rgb(250, 250, 250);
+}
+/*______________logo_______________*/
+.white-space{
+    width: 100%;
+    height: 25vh;
+    background-color: white;
+    box-shadow: inset 1px 1px 20px grey;
+
+}
+
+/*_______navbar_______*/
+nav{
+    width: 100%;
+    height: 16vh;
+    background-color: white;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 6vh;
+    z-index: 1;
+  
+}
+nav ul li{
+    list-style: none;
+    position: relative;
+
+}
+nav ul li a{
+    color: rgb(51, 48, 48);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(37, 208, 238);
+}
+nav ul li ul{
+    padding-top: 38px;
+    display: none;
+    position: absolute;
+    text-align: center;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    width: 200px;
+    background-color: white;
+}
+nav ul li ul li a{
+    display: block;
+}
+nav ul li ul li a:hover{
+    padding-left: 20px;
+}
+/*__________hamletlogo__________________*/
+.hamletlogo{
+    width: 100%;
+    height: 40vh;
+    background-color: blue;
+    margin-top: 38px;
+}
+.hamletlogo h1{
+    color: white;
+    font-size: 45px;
+    margin-left: 10px;
+}
+.hamletlogo p{
+    background-color: white;
+    width: 180px;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.hamletlogo h3{
+    font-size: 23px;
+    color: white;
+    margin-left: 100px;
+}
+menu{  
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    height: 16vh;
+    box-shadow: 1px 1px 20px gray;
+    background-color: white;
+}
+/*________sidebar_______*/
+.sidebar{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    gap: 30px;
+}
+
+.item{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 70vh;
+    background-color: white;
+    display: block;
+    overflow-y: scroll;
+    text-align: left;
+    border-bottom: 1px solid grey;
+    background-color: rgb(221, 218, 218);
+    margin-top: 103px;
+}
+.item ul{
+    display: block;
+    text-align: left;
+    padding-top: 0px;
+    display: block;
+}
+.item ul li{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 9px;
+}
+.item ul li:hover{
+    background-color: rgb(184, 180, 180);
+}
+.item ul li a:hover{
+    color: rgb(56, 54, 54);
+    padding-left: 3px;
+}
+.item ul h2{
+    font-size: 20px;
+    padding: 30px 30px 30px 10px;
+    text-align: left;
+}
+.content{
+    width: 100%;
+    background-color: rgb(240, 236, 236);
+    margin-top: 100px;
+    border-radius: 10px;
+}
+.content  p{
+    line-height: 33px;
+    text-align: justify;
+    border: 0px solid grey;
+    padding: 10px;
+}
+
+.content h1{
+    font-size: 25px;
+    color: rgb(56, 54, 54);
+    padding: 20px;
+}
+.content h2{
+    font-size: 25px;
+    color: rgb(56, 54, 54);
+    padding: 10px;
+    text-decoration: underline;
+}
+
+/*_______________footer_____________*/
+.footer{
+    background-color: rgb(54, 52, 52);
+    width: 100%;
+    margin-top: 200px;
+    height: 14vh;
+}
+.footer .top-links{
+    display: flex;
+    justify-content: center;
+
+}
+.footer .top-links ul li{
+    list-style: none;
+    margin: 0px 20px;
+}
+.footer .top-links ul li a{
+    color: white;
+    text-decoration: none;
+}
+.footer .top-links ul li a:hover{
+    color: rgb(37, 208, 238);
+}
+.copy-right{
+    width: 100%;
+    height: 14vh;
+    background-color: rgb(54, 52, 52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.copy-right p{
+    color: white;
+    font-size: 20px;
+}
+.bottom-link{
+    width: 100%;
+    height: 14vh;
+    background-color: rgb(54, 52, 52);
+    display: flex;
+    justify-content: center;
+
+}
+ .bottom-link ul li{
+    list-style: none;
+    margin: 0px 20px;
+}
+ .bottom-link ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+    }
+</style>
+
+</head>
+<body>
+    <!--____________white-space__________-->
+<div class="white-space"></div>    
+<!--___________header________________-->
+<nav>
+    <ul>
+        <li><a href="#">home</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </li>
+        <li><a href="#">home</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </li>
+        <li><a href="#">contact</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </li>
+        <li><a href="#">homee</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </li>
+        <li><a href="#">home</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </li>
+        <li><a href="#">home</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!--__________hamlet_logo-->
+<div class="hamletlogo">
+  <h1>hamlet</h1>
+  <p>shakespeare William</p><br>
+  <h3>the ultimate guide</h3>
+</div>
+<!--_____________page-links______________-->
+<menu>
+    <ul>
+        <li><a href="#">home</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </li>
+        <li><a href="#">home</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </li>
+        <li><a href="#">home</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </li>
+        <li><a href="#">home</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </li>
+        <li><a href="#">home</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </li>
+        <li><a href="#">home</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </li>
+    </ul>
+</menu>
+<!--________side_links__________-->
+
+  <div class="sidebar">
+     <div class="item">
+        <ul>
+            <h2>content</h2>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+        </ul>
+     </div>
+    <div class="content">
+         <h1>summary </h1>
+         <h2>act 1, scene 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, tempore dolore! Dolore odit beatae, consequatur neque nisi vel quaerat fugiat eveniet exercitationem, modi quae fuga perferendis veritatis id! Ullam, ipsum eligendi dolores delectus quasi deleniti nesciunt qui unde repellendus, incidunt atque cumque minima? Nam voluptate voluptas eaque explicabo sapiente est quae quaerat ut. Unde eos enim illo tenetur magni repellat maxime quo alias ullam cupiditate. Cupiditate pariatur non at commodi ratione voluptates laudantium exercitationem recusandae ea? Earum a tenetur nemo? Architecto repellat maiores inventore. Distinctio itaque qui quo ex. Reprehenderit molestias animi fugit! Consectetur doloremque praesentium ipsam, similique ab reprehenderit distinctio tempore iure eaque suscipit totam repudiandae, aut nesciunt. Sint saepe libero quisquam! Rem vitae ipsum excepturi magnam, earum nostrum sequi nam obcaecati iste, illo voluptas, amet quibusdam doloremque neque accusamus. Facere hic, est quisquam eum voluptatem ratione cumque voluptas laborum autem, odio natus possimus veniam magnam provident iure aliquid enim reprehenderit magni unde. Ducimus reiciendis quibusdam sapiente id, eius aliquid dolor ratione facere perferendis voluptates adipisci at eum saepe quia autem dolorem modi possimus, ab alias architecto tempore! Perspiciatis, laborum sapiente, illo id est quo natus, eum hic mollitia quasi harum maxime velit necessitatibus reprehenderit exercitationem sit repudiandae accusantium optio labore possimus! Veniam adipisci non mollitia eveniet libero? Nemo, accusantium? Dolor, id accusamus? Suscipit hic, ab, architecto, officia sapiente temporibus repudiandae dolorem maiores enim delectus cupiditate consectetur iste eligendi culpa vitae minus! Culpa ipsum itaque sed tenetur est nihil, expedita fuga nulla in fugit dolore, suscipit recusandae? Quas ea nobis ratione non alias placeat quod reiciendis dicta sit sint vero, quo quae, eum in. Labore aliquam possimus nesciunt fugiat ab. Illum consectetur laboriosam tenetur, modi blanditiis deleniti maxime, voluptatem atque quasi, necessitatibus pariatur! Error vitae dolorum veniam quidem, commodi id pariatur illum. Explicabo voluptatum deleniti voluptas iste. Cum, esse?</p>
+    </div>
+  </div>
+  <div class="footer">
+      <div class="top-links">
+          <ul>
+              <li><a href="#">about</a></li>
+              <li><a href="#">home</a></li>
+              <li><a href="#">contact us</a></li>
+              <li><a href="#">help</a></li>
+              <li><a href="#">other resourses</a></li>
+          </ul>
+      </div>
+      <div class="copy-right">
+          <p>copy-right @ 2021 all rights are preserved</p>
+      </div>
+    <div class="bottom-link">
+        <ul>
+            <li><a href="#">terms</a></li>
+            <li><a href="#">privacy</a></li>
+            <li><a href="#">home</a></li>
+        </ul>
+    </div>
+  </div>
+</body>
+</html>
